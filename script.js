@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     images.forEach((_, index) => {
         const dot = document.createElement('div');
         dot.classList.add('carousel-dot');
+        if (index === 0) dot.classList.add('active');
         dot.addEventListener('click', () => goToImage(index));
         dotsContainer.appendChild(dot);
     });
