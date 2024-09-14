@@ -19,12 +19,14 @@
 .carousel-button {
     position: absolute;
     top: 50%;
-    transform: translateY(0%);
-    background-color: rgba(0, 0, 0, 0.6);
+    transform: translateY(-50%);
+    background: none;
+    border: none;
     color: white;
-    border-radius: 20%;
-    padding: 5px;
+    font-size: 24px;
     cursor: pointer;
+    padding: 10px;
+    z-index: 10;
 }
 
 .carousel-button.prev {
@@ -38,24 +40,22 @@
 .carousel-dots {
     position: absolute;
     bottom: 20px;
-    left: 30%;
-    transform: translateX(-10%);
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 100%;
 }
 
 .carousel-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
-    margin: 0 8px;
+    width: 30px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .carousel-dot.active {
-    background-color: rgba(0, 0, 0, 1);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #e74c3c;
 }
