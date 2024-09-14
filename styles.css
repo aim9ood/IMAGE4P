@@ -63,10 +63,10 @@
     margin: 0 5px;
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 5px rgba(0, 0, 0. 0.5);
+    box-shadow: 0 0 2px rgba(0, 0, 0. 0.5);
 }
 
 .carousel-dot.active {
-    background-color: #e74c3c;
-    box-shadow: 0 0 8px rgba(231, 76, 60, 0.8);
+    background-color: rgba(0, 0, 0. 0.5);
+    box-shadow: 0 0 2px rgba(231, 76, 60, 0.8);
 }
