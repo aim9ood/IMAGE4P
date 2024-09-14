@@ -22,8 +22,6 @@
     transform: translateY(-50%);
     background: none;
     border: none;
-    color: white;
-    font-size: 24px;
     cursor: pointer;
     padding: 10px;
     z-index: 10;
@@ -37,21 +35,15 @@
     right: 10px;
 }
 
-.carousel-button::before {
-    content: '';
-    display: block;
-    width: 20px;
-    height: 20px;
-    border-top: 3px solid white;
-    border-right: 3px solid white;
+.carousel-button svg {
+    width: 48px;
+    height: 48px;
+    filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.5));
 }
 
-.carousel-button.prev::before {
-    transform: rotate(-135deg);
-}
-
-.carousel-button.next::before {
-    transform: rotate(45deg);
+.carousel-button path {
+    stroke: white;
+    stroke-width: 2;
 }
 
 .carousel-dots {
@@ -66,7 +58,7 @@
 
 .carousel-dot {
     width: 30px;
-    height: 3px;
+    height: 5px;
     background-color: rgba(255, 255, 255, 0.5);
     margin: 0 5px;
     cursor: pointer;
